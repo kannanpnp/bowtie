@@ -379,7 +379,7 @@ select:focus { border-color:var(--accent); }
     </svg>
   </div>
   <h1>Risk<span>2</span>Safe BowTie Studio</h1>
-  <div class="hdr-sub">Visual Bow Tie Risk Assessment &nbsp;|&nbsp; AI-Assisted</div>
+  <div class="hdr-sub">Visual Bow Tie Risk Assessment &nbsp;|&nbsp; AI-Assisted &nbsp;|&nbsp; <a href="manual.html" style="color:#10b981;text-decoration:none;border-bottom:1px dotted #10b981" title="Open the manual version (no AI required)">Switch to Manual Mode →</a></div>
 </header>
 
 <div class="app">
@@ -2756,14 +2756,14 @@ if (getApiKey()) document.getElementById('aiStatus').textContent = '✓ API key 
   <div class="modal-box">
     <div class="modal-title">🔑 Anthropic API Key Required</div>
     <div class="modal-sub">
-      The AI Guidance feature uses Claude to suggest threats, consequences, barriers, degradation factors and degradation controls based on your hazard and top event. To use it, paste your Anthropic API key below.
+      The AI Guidance feature uses Claude to suggest threats, consequences, barriers, degradation factors and degradation controls based on your hazard and top event. <strong>This tool does not include a shared API key</strong> — each user provides their own. Paste your personal Anthropic API key below.
     </div>
     <input type="password" class="modal-input" id="apiKeyInput" placeholder="sk-ant-api03-..." autocomplete="off" spellcheck="false">
     <div class="modal-hint">
-      Don't have a key? Get one free at <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a> — sign up gives you free trial credits.
+      Don't have a key? Get one free at <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a> — sign up gives you free trial credits, typically enough for dozens of analyses.
     </div>
     <div class="modal-privacy">
-      <strong>🔒 Your key stays private.</strong> It is saved only in <em>your browser's local storage</em> on this device. It is never sent anywhere except directly to api.anthropic.com from your browser. This application has no backend server. You can clear it anytime via the "Clear key" button in the sidebar.
+      <strong>🔒 Your key stays on your device.</strong> It is saved only in <em>your browser's local storage</em> — a private, sandboxed area belonging only to you. It is never sent anywhere except directly to api.anthropic.com from your browser. This application has no backend server, no analytics, and no telemetry. You can clear the key anytime via the "Clear Key" button in the sidebar, or by opening this page in incognito mode (where it won't persist at all).
     </div>
     <div class="modal-actions">
       <button class="modal-btn modal-btn-secondary" onclick="closeKeyModal()">Cancel</button>
